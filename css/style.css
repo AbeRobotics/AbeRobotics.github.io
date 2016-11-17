@@ -226,7 +226,8 @@ figure {
   opacity: 1;
 }
 
-#fh5co-header {
+#fh5co-
+{
   position: relative;
   margin-bottom: 0;
   z-index: 9999999;
@@ -453,8 +454,8 @@ figure {
 
 #fh5co-header-section {
   background: rgba(255, 255, 255, 0.95);
-  position: absolute;
-  top: 40px;
+  position: fixed;
+  top: 0;
   left: 0;
   padding: 0;
   width: 100%;
