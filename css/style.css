@@ -34,12 +34,18 @@ a:hover {
   text-decoration: none !important;
   color: #FA7E0A !important;
 }
-
+  
 p, ul, ol {
   margin-bottom: 1.5em;
   font-size: 18px;
   color: #848484;
   font-family: "Roboto", Arial, serif;
+}
+
+#vid{
+  top:20px;
+  bottom: 20px;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -226,8 +232,7 @@ figure {
   opacity: 1;
 }
 
-#fh5co-
-{
+#fh5co-header {
   position: relative;
   margin-bottom: 0;
   z-index: 9999999;
@@ -455,7 +460,7 @@ figure {
 #fh5co-header-section {
   background: rgba(255, 255, 255, 0.95);
   position: fixed;
-  top: 0;
+  top: 0px;
   left: 0;
   padding: 0;
   width: 100%;
@@ -1482,5 +1487,7 @@ figure {
   z-index: 9999;
   background: url(../images/hourglass.svg) center no-repeat #222222;
 }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
