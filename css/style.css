@@ -34,18 +34,12 @@ a:hover {
   text-decoration: none !important;
   color: #FA7E0A !important;
 }
-  
+
 p, ul, ol {
   margin-bottom: 1.5em;
   font-size: 18px;
   color: #848484;
   font-family: "Roboto", Arial, serif;
-}
-
-#vid{
-  top:20px;
-  bottom: 20px;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1487,7 +1481,5 @@ figure {
   z-index: 9999;
   background: url(../images/hourglass.svg) center no-repeat #222222;
 }
-
-/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
