@@ -1482,4 +1482,8 @@ figure {
   background: url(../images/hourglass.svg) center no-repeat #222222;
 }
 
+#videos {
+  padding-bottom: 45px;
+}
+
 /*# sourceMappingURL=style.css.map */
