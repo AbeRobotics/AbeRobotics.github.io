@@ -3,7 +3,7 @@
 <img src="http://aberobotics.github.io/images/ARR Logo.png" width="150"/>
 
 
-**contribute-guide**
+**Contributor-guide**
 
  **Front end development using git**
 
