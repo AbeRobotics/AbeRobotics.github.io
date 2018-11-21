@@ -17,9 +17,10 @@
 
 >**Resources**
 
-- [Learn'git'](https://www.codecademy.com/learn/learn-git)
+- [Learn 'git'](https://www.codecademy.com/learn/learn-git)
 - [How to install 'git'](https://www.linode.com/docs/development/version-control/how-to-install-git-on-linux-mac-and-windows)
 - [Learn 'html'](https://www.codecademy.com/learn/learn-html)
 - [Learn 'javascript'](https://www.codecademy.com/learn/introduction-to-javascript)
 - [Learn 'css'](https://www.codecademy.com/learn/learn-css)
 - [Learn 'commandline'](https://www.codecademy.com/learn/learn-the-command-line)
+- [Learn 'How to deploy a website'](https://www.codecademy.com/courses/deploy-a-website)
