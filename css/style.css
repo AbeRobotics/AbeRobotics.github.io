@@ -35,6 +35,13 @@ a:hover {
   color: #FA7E0A !important;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -217px;
+    visibility: hidden;
+}
+
 p, ul, ol {
   margin-bottom: 1.5em;
   font-size: 18px;
@@ -51,6 +58,10 @@ h1, h2, h3, h4, h5, h6 {
 
 figure {
   margin-bottom: 2em;
+}
+
+.Who {
+ top: -2050;
 }
 
 ::-webkit-selection {
