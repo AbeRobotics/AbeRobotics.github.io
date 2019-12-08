@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Official Website for the William Aberhart Robotics Teams " />
 	<meta name="keywords" content="Abe Robotics Republic, ARR, Aberhart, Aberhart Robotics, Abe Robotics, FTC, First Robotics" />
-	<meta name="author" content="Maggie Brewster, Seth Heizer " />
+	<meta name="author" content="Maggie Brewster, Seth Heizer, Finn Vamosi" />
 
 
   	<!-- Facebook and Twitter integration -->
@@ -54,7 +54,7 @@
 	<![endif]-->
 
 	</head>
-	<body>
+	<body id="Home">
 		<div id="fh5co-wrapper" >
 		<div id="fh5co-page">
 		<div id="fh5co-header">
@@ -62,23 +62,24 @@
 				<div class="container">
 					<div class="nav-header" >
 						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-						<h1 id="fh5co-logo"><a href="index.html"><img src="images/ARR%20Logo.png" style="width:66px;height:66px;">&nbsp;&nbsp;Aberhart Robotics Republic</a></h1>
+						<h1 id="fh5co-logo"><a href="index.html#Home"><img src="images/ARR%20Logo.png" style="width:66px;height:66px;position:relative;bottom:10px;right:10px;">&nbsp;&nbsp;Aberhart Robotics Republic</a></h1>
 						<!-- START #fh5co-menu-wrap -->
 						<nav id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu" id="fh5co-primary-menu">
 								<li>
-									<a  class="active" href="index.html">Home</a>
+									<a class="active" href="index.html#Home">Home</a>
 								</li>
 								<li>
-									<a href="#">Videos</a>
+									<a href="#">Media</a>
                                     <ul class="fh5co-sub-menu">
+										<li><a href="videos-2019.html">2019</a></li>
                                         <li><a href="videos-2018-orange.html">2018 Team Orange</a></li>
 										<li><a href="videos-2018-white.html">2018 Team White</a></li>
                                         <li><a href="videos-2016.html">2016</a></li>
                                     </ul>
-								<li>
+								<!--<li>
 									<a href="http://www.firstinspires.org/robotics/ftc" class="fh5co-sub-ddown" target="_blank"> Competitions</a>
-									<!-- <ul class="fh5co-sub-menu">
+									 <ul class="fh5co-sub-menu">
 									 	<li><a href="left-sidebar.html">Web Development</a></li>
 									 	<li><a href="right-sidebar.html">Branding &amp; Identity</a></li>
 										<li>
@@ -95,9 +96,9 @@
 										<li><a href="#">UI Animation</a></li>
 										<li><a href="#">Copywriting</a></li>
 										<li><a href="#">Photography</a></li> 
-									</ul>-->
-								</li>
-								<li><a href= "#Who">About</a></li>
+									</ul>
+								</li>-->
+								<li><a href="#Who">About</a></li>
 								<li><a href="#Contact">Contact</a></li>
 							</ul>
 						</nav>
@@ -142,38 +143,67 @@
 		<div id="fh5co-team-section">
 			<div class="container">
 				<div class="row about">
-					<div class="col-md-6">
-						<a class="anchor" id= "Who"></a>
-							<h2>Who are we?</h2>
-						</a>						
+					<a class="anchor" id= "Who"></a>
+					
+					<div class="col-md-12">						
+						<h2>Who are we?</h2>						
 						<p>
-							The Aberhart Robotics Republic (ARR) is William Aberhart's First Robotics FTC team. 
+							The Aberhart Robotics Republic (ARR) is 
+							<a href="http://school.cbe.ab.ca/school/williamaberhart/Pages/default.aspx" target="_blank">
+							William Aberhart High School</a>'s First Robotics FTC team. 
 							The team spans all grades with many variations of skill levels, and consists of an ARR 
 							Orange team and an ARR White team. We look to emphasize the skills of each individual, 
-							whether that be programming, engineering, design, or photography. We will be again be competing 
-							in the FIRST Robotics FTC 2019 'Skystone' Challenge with two competition robots we design and program. This is 
-							a place where students get to be challenged but also have fun! Each week we come together 
-							to share our love for all things tech and bond over the joy of building robots. </p>
+							whether that be programming, engineering, design, or photography. We will be competing 
+							in the FIRST Robotics FTC 2019 'Skystone' Challenge. We work on our robots every Wednesday
+							in our school's cafeteria.
+						</p>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-4">
 						<h2>What is FTC? </h2>
-						<p>FTC stands for FIRST Tech Challenge. It is a competition designed for students in grades 7-12 and places them in head to head competition with one another. Teams are given a 10 week period to build the robot that they will compete with. The challenge is designed to engage kids in programming and mechanical thinking. The impact of involvement in first is well documented. First students are more involved in school and preferred by universities. However, the most important part of FIRST is being part of a team and community and bonding with likeminded students. </p>
+						<p>
+							FTC stands for <a href="https://www.firstinspires.org/robotics/ftc" target="_blank">FIRST Tech Challenge</a>. 
+							It is a competition designed for students in grades 7-12. Teams are given 10 weeks to build and program 
+							a robot designed for the year's challenge.
+						</p>
 					</div>
+					<div class="col-md-5">
+						<h2>Sponsors and Mentors</h2>
+						<p>
+							We would like to thank our sponsors, 
+							<a href="https://gdmissionsystems.ca/" target="_blank">General Dynamics Mission Systems Canada</a> 
+							and the Aberhart Parent Council! Thanks to their support, we've purchased two additional robots for 
+							prototyping, one for each team. WIthout their continued help, we'd be unable to operate at our current scale.
+						</p>
+					</div>
+					<div class="col-md-3">
+							<h2>Merchandise</h2>
+							<p>
+								We've got merch! If you want to support us, head to our 
+								<a href="https://urstore.ca/aberhart-robotics-republic" target="_blank">apparel store</a>. 
+								We've got hoodies, shirts, hats, and plenty more. 
+							</p>
+						</div>
 				</div>
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 						<a NAME = "Robots">
-							<h2>The Robots </h2>
+							<h2>Our Robots </h2>
 						</a>
-						<p> These robots are the fruits of our labor. They are a collaborative effort between all students of the club working together to create something meaningful and exciting. </p>
+						<p> These robots are the fruits of our labor. They are a collaborative effort between all students 
+							of the club working together to create something meaningful and exciting. All robots are equipped 
+							with Mecanum wheels capable of translation in all directions.
+						</p>
 					
 					</div>
 					<div class="col-md-4 fh5co-staff">
 						<img src="images/VEX.JPG" alt="Free HTML5 Bootstrap Template" class="img-responsive">
-						<h3>ARR Team White Robot</h3>
-						<h4>VEX </h4>
-						<p>This is the Aberhart White Team's competion robot for the 2018-2019 season. This robot's main objective is to lift itself up and using it's pull up arm to secure a large amount of points. It can also transfer minerals to the depot as well as perform several tasks during the autonomous period. It also has image recognition capabilities!</p>
-					<!--	<ul class="fh5co-social">
+						<h3>Team Orange Alpha Robot</h3>
+						<h4>VEX</h4>
+						<p>
+							Team Orange's competition robot uses a hook-and-elevator system to pull a foundation, then grab 
+							and lift bricks onto the foundation.
+						</p>
+						<!--<ul class="fh5co-social">
 							<li><a href="#"><i class="icon-google"></i></a></li>
 							<li><a href="#"><i class="icon-dribbble"></i></a></li>
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -184,10 +214,12 @@
 					</div>
 					<div class="col-md-4 fh5co-staff">
 						<img src="images/Tetrix Robot 1.jpg" style="width:720px;height:240px" alt="Free HTML5 Bootstrap Template" class="img-responsive">
-						<h3>ARR Team Orange Robot</h3>
+						<h3>Team White Robot</h3>
 						<h4>FTC Tetrix Build Kit</h4>
-						<p>This is the Aberhart Orange Team's competion robot for the 2018-2019 season. This robot also focuses primarily on scoring points by doing a pull up. However, the design of this robot's arm is slightly different. It uses it's extendable arm to retrieve place minerals in the depot.</p>
-					<!--	<ul class="fh5co-social"> 
+						<p>
+							Team White's competition robot uses a torqueable claw to grab and lift bricks onto a foundation.
+						</p>
+						<!--<ul class="fh5co-social"> 
 							<li><a href="#"><i class="icon-google"></i></a></li>
 							<li><a href="#"><i class="icon-dribbble"></i></a></li>
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -198,11 +230,12 @@
 					</div>
 					<div class="col-md-4 fh5co-staff">
 						<img src="images/2nd Competition Robot.jpg" style="width:720px;height:240px" alt="Free HTML5 Bootstrap Template" class="img-responsive">
-						<h3>Last Year's Robot</h3>
+						<h3>Team Orange Beta Robot</h3>
 						<h4>REV Robotics</h4>
-						<p> This is was last year's competition robot and was used for the 2017-2018 season. It used a lift system to pick up and stack large blocks. One of it's most well designed aspects was it's coding aspect which was really well designed to perform all the autonmous tasks despite some of the difficulties in achieving this.
-</p>
-					<!--	<ul class="fh5co-social">
+						<p>
+							Used for quick prototyping and practice while the Alpha bot is being worked on.
+						</p>
+						<!--<ul class="fh5co-social">
 							<li><a href="#"><i class="icon-google"></i></a></li>
 							<l><a href="#"><i class="icon-dribbble"></i></a></li>
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -218,20 +251,25 @@
 			<div id="footer">
 				<div class="container">
 					<div class="row">
+						
 						<div class="col-md-3">
 							<a class=anchor id ="Contact"></a>
 							<h3 class="section-title">Contact Us</h3>
-							<p> Despite being a CBE affiliate we can be contacted through various means. We are reachable through William Aberhart High School. However, we have our own email for more direct contact.</p>
+							<p> Despite being a CBE affiliate we can be contacted through various means. We are reachable 
+                                through William Aberhart High School, however we have our own email for more direct contact.</p>
 						</div>
 						
 						<div class="col-md-3">
 							<h3 class="section-title">Our Affiliations</h3>
 							<ul>
-								<li><a href="http://www.cbe.ab.ca/Pages/default.aspx">CBE</a></li>
-								<li><a href="http://schools.cbe.ab.ca/b829/aberhart/">William Aberhart High School</a></li>
-								<li><a href="http://www.firstinspires.org/robotics/ftc">FIRST Robotics </a></li>
-								<li><a href="http://schools.cbe.ab.ca/b829/aberhart/">Alberta Tech Alliance </a></li>
-							<!--	<li><a href="#">Free Bootstrap Template</a></li>
+								<li><a href="https://gdmissionsystems.ca/" target="_blank">General Dynamics Mission Systems Canada</a></li>
+								<li><a href="https://urstore.ca/aberhart-robotics-republic" target="_blank">Apparel Store</a></li>
+								<li><a href="http://www.cbe.ab.ca/Pages/default.aspx" target="_blank">CBE</a></li>
+								<li><a href="http://schools.cbe.ab.ca/b829/aberhart/" target="_blank">William Aberhart High School</a></li>
+								<li><a href="http://www.firstinspires.org/robotics/ftc" target="_blank">FIRST Robotics</a></li>
+								<li><a href="http://ataarobotics.ca/" target="_blank">Alberta Tech Alliance</a></li>
+								
+								<!--<li><a href="#">Free Bootstrap Template</a></li>
 								<li><a href="#">Free HTML5 Template</a></li>
 								<li><a href="#">Free HTML5 &amp; CSS3 Template</a></li>
 								<li><a href="#">HandCrafted Templates</a></li> -->
@@ -247,6 +285,7 @@
 								<li><i class="icon-globe2"></i><a href="#">www.aberhart.ca</a></li>
 							</ul>
 						</div>
+
 						<div class="col-md-3">
 							<h3 class="section-title">Drop us a Line</h3>
 							<form class="contact-form">
@@ -269,14 +308,15 @@
 							</form>
 						</div>
 					</div>
+
 					<div class="row copy-right">
 						<div class="col-md-6 col-md-offset-3 text-center">
 							<p class="fh5co-social-icons">
-								<a href="https://mobile.twitter.com/aberhartRR"><i class="icon-twitter2"></i></a>
+								<a href="https://mobile.twitter.com/aberhartRR" target="_blank"><i class="icon-twitter2"></i></a>
 								<a href="https://www.instagram.com/aberhartroboticsrepublic/" target="_blank"><i class="icon-instagram"></i></a>
 								<a href="https://youtu.be/jtaqB6ZAjz0?list=PLMFXvOdxpAKDhq0-bKqS6GAlntE98RVYe" target="_blank"><i class="icon-youtube"></i></a>
 							</p>
-							<p>&copy; 2019 ARR <a href="#">Aberhart Robotics Republic</a><br>
+							<p>&copy; 2020 ARR <a href="#">Aberhart Robotics Republic</a><br>
 						</div>
 					</div>
 				</div>
