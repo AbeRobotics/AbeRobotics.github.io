@@ -3,7 +3,7 @@ TITLE:
 Aberhart Robotics
 
 AUTHOR(s)
-Maggie Brewster, Seth Heizer
+Maggie Brewster, Seth Heizer, Finn Vamosi
 
 
 CREDITS:

@@ -287,7 +287,7 @@ figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
@@ -304,7 +304,7 @@ figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover.fh5co-cover_2 {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
@@ -534,7 +534,7 @@ figure {
 #fh5co-primary-menu > li > .sf-with-ul:after {
   border: none !important;
   font-family: 'icomoon';
-  speak: none;
+  /*speak: none;*/
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -557,7 +557,7 @@ figure {
 #fh5co-primary-menu > li > ul li > .sf-with-ul:after {
   border: none !important;
   font-family: 'icomoon';
-  speak: none;
+  /*speak: none;*/
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -682,7 +682,7 @@ figure {
 }
 #fh5co-hero .flexslider .flex-direction-nav a:before {
   font-family: 'icomoon';
-  speak: none;
+  /*speak: none;*/
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -697,7 +697,7 @@ figure {
 }
 #fh5co-hero .flexslider .flex-direction-nav a.flex-next:before {
   font-family: 'icomoon';
-  speak: none;
+  /*speak: none;*/
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1106,7 +1106,7 @@ figure {
   width: 100%;
   float: left;
   background: #222831;
-  padding: 7em 0 40px;
+  padding: 5em 0 30px;
 }
 #footer p {
   color: rgba(255, 255, 255, 0.3);
@@ -1210,8 +1210,8 @@ figure {
 }
 #footer .copy-right {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 5em;
-  margin-top: 5em;
+  padding-top: 3em;
+  margin-top: 1em;
 }
 #footer .copy-right p {
   color: rgba(255, 255, 255, 0.3);
