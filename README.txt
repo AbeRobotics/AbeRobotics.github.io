@@ -2,7 +2,7 @@
 TITLE: 
 Aberhart Robotics
 
-AUTHOR(s)
+AUTHOR(s):
 Maggie Brewster, Seth Heizer, Finn Vamosi
 
 
@@ -31,7 +31,7 @@ https://icomoon.io/app/
 
 Colored Icons from Flaticon
 http://flaticon.com/
-( Please check the license before you use this icons from flaticon )
+( Please check the license before you use these icons from flaticon )
 
 Respond JS
 https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
