@@ -1,0 +1,177 @@
+/* General */
+* {
+    font-family: "Roboto", Arial, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* remove bold */
+h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+/* Make href's look normal */
+a[href] {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Href's that go to other sites */
+a[href^="https"] {
+	color: #0067d2;	
+}
+
+li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+/* Class's */
+.bar-links {
+    /* font */
+    font-size: 1.5em;
+
+    /* padding */
+   padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    transition: background 0.3s ease;
+}
+
+.bar-links:hover {
+    background: #efefef;
+    cursor: pointer;
+}
+
+.bar-links:active {
+    background: #f6f6f6;
+}
+
+.dropdown-elements {
+    /* padding for the dropdown menu */
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.dropdown-elements:hover {
+    background: #efefef;
+    transition: background 0.3s ease;
+}
+
+.dropdown-elements:active {
+    background: #f6f6f6;
+}
+
+/* Id's */
+/* Bar elements */
+#bar {
+    /* text */
+    color: black;
+    text-align: left;
+
+    position: fixed;
+    right: 0px;
+    left: 0px;
+
+    /* background */
+    background: transparent;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.22);
+
+    /* Make shadow work for older browsers */
+    -webkit-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.22);
+    -ms-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.22);
+    -o-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.22);
+
+    /* griding */
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 2vw;
+
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#logo {
+    width: 66px;
+    height: 66px;
+    margin-right: 2vw;
+
+    float: left;
+}
+
+#title {
+    /* kinda center the text */
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+#title-text {
+     /* text */
+     font-size: 2.5em;
+
+    /* add spacing in bettween the log and text */
+    margin-top: 1.3vh;
+}
+
+#bar-elements {
+    /* text */
+    font-size: 1em;
+    text-align: center;
+
+    /* griding */
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+/* Dropdown menu code */
+#dropdown {
+    display: inline-block;
+}
+
+#dropdown-content {
+    /* text */
+    text-align: left;
+
+    display: none;
+    position: absolute;
+
+    /* Shadow & Color */
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    /* Make the shadow work with older browsers */
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    -ms-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    -o-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#dropdown:hover #dropdown-content {
+    display: block;
+}
+
+#welcome { 
+    /* text */
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    
+    background-image: url(images/Mindstorm%20Banner.JPG);
+
+    /* bakcground image settings */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    /* set it's height */
+    min-height: 100vh;
+}
+
+
