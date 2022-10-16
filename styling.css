@@ -6,20 +6,21 @@
     box-sizing: border-box;
 }
 
+body {
+    animation: fadeInAnimation ease 1.5s;
+}
+
 /* remove bold */
 h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
-/* Make href's look normal */
-a[href] {
-    text-decoration: none;
-    color: #000000;
+h2 {
+    margin-bottom: 30px;
 }
 
-/* Href's that go to other sites */
-a[href^="https"] {
-	color: #0067d2;	
+p {
+    color: #848484;
 }
 
 li {
@@ -28,13 +29,30 @@ li {
     list-style: none;
 }
 
+/* Make links that go to other parts of the website look normal */
+a[href] {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Links that go to other sites */
+a[href^="http"] {
+	color: #fa7e0a;
+    text-decoration: none;	
+}
+
+a[href^="https"]:hover {
+	color: #faa352;
+    text-decoration: underline;
+}
+
 /* Class's */
 .bar-links {
     /* font */
     font-size: 1.5em;
 
     /* padding */
-   padding-left: 20px;
+    padding-left: 20px;
     padding-right: 20px;
     padding-top: 45px;
     padding-bottom: 45px;
@@ -157,6 +175,7 @@ li {
     display: block;
 }
 
+/* This is for the big image and it's text */
 #welcome { 
     /* text */
     color: white;
@@ -174,4 +193,25 @@ li {
     min-height: 100vh;
 }
 
+#info {
+    font-size: 1.2em;
 
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 7em;
+
+}
+
+#who-are-we {
+
+}
+
+/* keyframes */
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
