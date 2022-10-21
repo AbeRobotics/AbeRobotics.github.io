@@ -1,3 +1,4 @@
+/* special thanks to Shayan for giving me a pretzzel */
 /* General */
 * {
     font-family: "Roboto", Arial, serif;
@@ -126,8 +127,8 @@ a[href^="https"]:hover {
 
 #title {
     /* kinda center the text */
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #title-text {
@@ -197,18 +198,70 @@ a[href^="https"]:hover {
     font-size: 1.2em;
     line-height: 1.8;
 
-    margin-left: 25vw;
-    margin-right: 25vw;
+    width: 1170px;
+
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 7em;
 }
 
-#formating-who-are-we {
+/* formating the about section */
+#formatting-about {
     margin-bottom: 30px;
 }
 
 #formatting-ftc-sponsors-merch {
     display: grid;
     grid-template-columns: 33.3% 41.6% 25%;
+}
+
+#formatting-ftc-about {
+    padding-right: 20px;
+}
+
+#formatting-merchandise {
+    padding-left: 20px;
+}
+
+#gdms-canada-logo {
+    text-align: center;
+}
+
+#our_robots {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 5vh;
+}
+
+#robot_images {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    text-align: center;
+}
+
+#footer {
+    background: #222831;
+    color: #848484;
+
+    width: 100%;
+    
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+#affiliations-and-contacts {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 3vw;
+
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 /* keyframes */
