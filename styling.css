@@ -20,14 +20,18 @@ h2 {
     margin-bottom: 30px;
 }
 
-p {
-    color: #848484;
+hr {
+    color: #393e46;
 }
 
 li {
     padding-top: 10px;
     padding-bottom: 10px;
     list-style: none;
+}
+
+p {
+    color: #848484;
 }
 
 /* Make links that go to other parts of the website look normal */
@@ -42,7 +46,7 @@ a[href^="http"] {
     text-decoration: none;	
 }
 
-a[href^="https"]:hover {
+a[href^="http"]:hover{
 	color: #faa352;
     text-decoration: underline;
 }
@@ -84,6 +88,10 @@ a[href^="https"]:hover {
 
 .dropdown-elements:active {
     background: #f6f6f6;
+}
+
+.fade-out {
+    color: #656970;
 }
 
 /* Id's */
@@ -183,7 +191,7 @@ a[href^="https"]:hover {
     text-align: center;
     font-size: 1.5em;
     
-    background-image: url(images/Mindstorm%20Banner.JPG);
+    background-image: url(images/Banner/Mindstorm%20Banner.JPG);
 
     /* bakcground image settings */
     background-repeat: no-repeat;
@@ -252,6 +260,8 @@ a[href^="https"]:hover {
 
     padding-top: 5em;
     padding-bottom: 2em;
+
+    margin-top: 7em; 
 }
 
 #affiliations-and-contacts {
@@ -259,9 +269,29 @@ a[href^="https"]:hover {
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 3vw;
 
+    width: 1170px;
+
     margin-left: auto;
     margin-right: auto;
 
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#contact-us {
+    padding-top: 7px;
+    line-height: 1.5;
+}
+
+#copyright-and-socials {
+    text-align: center;
+
+    width: 1170px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 2em;
 }
 
 /* keyframes */

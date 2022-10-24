@@ -10,8 +10,3 @@ CREDITS:
 
 Google Fonts
 https://www.google.com/fonts/
-
-
-Demo Images: 
-http://unsplash.com/
-http://pexels.com/
