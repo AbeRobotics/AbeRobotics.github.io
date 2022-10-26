@@ -11,6 +11,21 @@ body {
     animation: fadeInAnimation ease 1.5s;
 }
 
+input, textarea {
+    color: rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 5%;
+
+    font-size: 16px;
+    
+    padding: 15px;
+
+    margin-bottom: 15px;
+}
+
 /* remove bold */
 h2, h3, h4, h5, h6 {
     font-weight: normal;
@@ -20,14 +35,18 @@ h2 {
     margin-bottom: 30px;
 }
 
-hr {
-    color: #393e46;
-}
-
 li {
     padding-top: 10px;
     padding-bottom: 10px;
     list-style: none;
+}
+
+hr {
+    color: #393e46;
+
+    margin-top: 1em;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 p {
@@ -71,6 +90,33 @@ a[href^="http"]:hover{
 
 .bar-links:active {
     background: #f6f6f6;
+}
+
+/* Dropdown menu code */
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    /* text */
+    text-align: left;
+
+    display: none;
+    position: absolute;
+
+    /* Shadow & Color */
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    /* Make the shadow work with older browsers */
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    -ms-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    -o-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown-elements {
@@ -154,34 +200,7 @@ a[href^="http"]:hover{
 
     /* griding */
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
-}
-
-/* Dropdown menu code */
-#dropdown {
-    display: inline-block;
-}
-
-#dropdown-content {
-    /* text */
-    text-align: left;
-
-    display: none;
-    position: absolute;
-
-    /* Shadow & Color */
-    background-color: #ffffff;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
-    /* Make the shadow work with older browsers */
-    -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    -ms-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    -o-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-#dropdown:hover #dropdown-content {
-    display: block;
+    grid-template-columns: auto auto auto auto auto auto;
 }
 
 /* This is for the big image and it's text */
@@ -191,7 +210,7 @@ a[href^="http"]:hover{
     text-align: center;
     font-size: 1.5em;
     
-    background-image: url(images/Banner/Mindstorm%20Banner.JPG);
+    background-image: url(../images/Banner/Mindstorm%20Banner.JPG);
 
     /* bakcground image settings */
     background-repeat: no-repeat;
@@ -266,7 +285,7 @@ a[href^="http"]:hover{
 
 #affiliations-and-contacts {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     grid-column-gap: 3vw;
 
     width: 1170px;
@@ -276,6 +295,14 @@ a[href^="http"]:hover{
 
     padding-left: 15px;
     padding-right: 15px;
+}
+
+#affiliations-link {
+    color: #27211b;
+}
+
+#affiliations-link:hover {
+    color: #fa7e0a;
 }
 
 #contact-us {
@@ -292,6 +319,11 @@ a[href^="http"]:hover{
     margin-right: auto;
 
     padding-top: 2em;
+}
+
+#send-message {
+    background: #fa7e0a;
+    color: #fff3e7;
 }
 
 /* keyframes */

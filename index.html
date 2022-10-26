@@ -9,7 +9,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link rel="stylesheet" type="text/css" href="styling.css">
+		<link rel="stylesheet" type="text/css" href="css/styling.css">
 		<title>Aberhart Robotics Republic</title>
 		<link rel="icon" href="images/Logo/ARR-Logo.png">
 
@@ -48,9 +48,9 @@
 			<nav id="bar-elements">
 				<a class="bar-links" href="index.html">Home</a>
 
-				<div class="bar-links" id="dropdown">
+				<div class="bar-links dropdown">
 					Teams
-					<div id="dropdown-content">
+					<div class="dropdown-content">
 						<ul>
 							<li class="dropdown-elements">
 								<a href="orange-team.html">Orange Team</a>
@@ -70,6 +70,18 @@
 						</ul>
 					</div>
 				</div>
+
+				<div class="bar-links dropdown">
+					Sponsors
+					<div class="dropdown-content">
+						<ul>
+							<li class="dropdown-elements">
+								<a href="gdm.html">General Dynamics</a>
+							</li>	
+						</ul>
+					</div>
+				</div>
+
 				<a class="bar-links" href="#Who">About</a>
 				<a class="bar-links" href="#Contact">Contact</a>
 			</nav>
@@ -161,57 +173,64 @@
 							
 				<div>
 					<h3>Our Affiliations</h3>
-					<ul>
+					<ul id="affiliations-link">
 						<li><a href="https://gdmissionsystems.ca/" target="_blank">General Dynamics Mission Systems Canada</a></li>
 						<li><a href="https://urstore.ca/aberhart-robotics-republic" target="_blank">Apparel Store</a></li>
-						<li><a href="http://www.cbe.ab.ca/Pages/default.aspx" target="_blank">CBE</a></li>
-						<li><a href="http://schools.cbe.ab.ca/b829/aberhart/" target="_blank">William Aberhart High School</a></li>
-						<li><a href="http://www.firstinspires.org/robotics/ftc" target="_blank">FIRST Robotics</a></li>
-						<li><a href="http://ataarobotics.ca/" target="_blank">Alberta Tech Alliance</a></li>
+						<li><a href="https://www.cbe.ab.ca/Pages/default.aspx" target="_blank">CBE</a></li>
+						<li><a href="https://schools.cbe.ab.ca/b829/aberhart/" target="_blank">William Aberhart High School</a></li>
+						<li><a href="https://www.firstinspires.org/robotics/ftc" target="_blank">FIRST Robotics</a></li>
+						<li><a href="https://ataarobotics.ca/" target="_blank">Alberta Tech Alliance</a></li>
 					</ul>
 				</div>
 
 				<div>
 					<h3>Our Address</h3>
-					<ul>
+					<ul class="fade-out">
 						<li>3009 Morley Trail NW, Calgary Alberta, AB T2M 4G9</li>
 						<li>+ 403 289 2551 </li>
-						<li class="fade-out">AberhartRoboticsRepublic<br/>@gmail.com</li>
-						<li class="fade-out">www.aberhart.ca</li>
+						<li>AberhartRoboticsRepublic<br/>@gmail.com</li>
+						<li>www.aberhart.ca</li>
 					</ul>
+				</div>
+
+				<div>
+					<h3>Credits</h3>
+					<ul>
+						<li>Original template design by FreeHTML5.co</li>
+
+					</ul>
+
 				</div>
 				
 				<div>
 					<h3>Drop us a Line</h3>
 					<form>
 						<div>
-							<label for="name">Name</label>
 							<input type="name" placeholder="Name">
 						</div>
 						<div>
-							<label for="email">Email</label>
 							<input type="email" placeholder="Email">
 						</div>
 						<div>
-							<label for="message">Message</label>
-							<textarea rows="7" placeholder="Message" style="resize: none";></textarea>
+							<textarea rows="7" placeholder="Message"></textarea>
 						</div>
 						<div>
-							<input type="submit" value="Send Message"> 
+							<input id="send-message" type="submit" value="Send Message"> 
 						</div>
 					</form>
 				</div>
 			</div>
 			
 
-			<hr class="fade-out">
+			<hr>
 			<div id="copyright-and-socials">
+				<!--Images by starline on Freepik-->
 				<p>
 					<a href="https://mobile.twitter.com/aberhartRR" target="_blank"><i class="icon-twitter2"></i></a>
 					<a href="https://www.instagram.com/aberhartroboticsrepublic/" target="_blank"><i class="icon-instagram"></i></a>
 					<a href="https://www.youtube.com/channel/UCoMZ9oLOFY7d9KRwseTyHeg/videos" target="_blank"><i class="icon-youtube"></i></a>
 				</p>
-				<p>2022 ARR Aberhart Robotics Republic</p>
+				<p><a class="fade-out">2022 ARR </a>Aberhart Robotics Republic</p>
 			</div>
 		</footer>
 	</body>
