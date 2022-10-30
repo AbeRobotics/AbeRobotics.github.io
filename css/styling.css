@@ -13,26 +13,35 @@ body {
 
 input, textarea {
     color: rgba(255, 255, 255, 0.5);
-    box-sizing: border-box;
 
     background: rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 5%;
+    box-sizing: border-box;
 
     font-size: 16px;
     
     padding: 15px;
 
     margin-bottom: 15px;
+    resize: none;
+}
+
+footer {
+    background: #222831;
+    color: #848484;
+
+    width: 100%;
+
+    padding-top: 5em;
+    padding-bottom: 2em;
+
+    margin-top: 7em; 
 }
 
 /* remove bold */
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
-}
-
-h2 {
-    margin-bottom: 30px;
 }
 
 li {
@@ -74,6 +83,7 @@ a[href^="http"]:hover{
 .bar-links {
     /* font */
     font-size: 1.5em;
+    display: inline-block;
 
     /* padding */
     padding-left: 10px;
@@ -88,19 +98,7 @@ a[href^="http"]:hover{
     cursor: pointer;
 }
 
-.bar-links:active {
-    background: #f6f6f6;
-}
-
 /* Dropdown menu code */
-.dropdown {
-    display: inline-block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .dropdown-content {
     /* text */
     text-align: left;
@@ -117,6 +115,10 @@ a[href^="http"]:hover{
     -moz-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     -ms-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     -o-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.bar-links:hover .dropdown-content {
+    display: block;
 }
 
 .dropdown-elements {
@@ -136,8 +138,22 @@ a[href^="http"]:hover{
     background: #f6f6f6;
 }
 
+.footer-titles {
+    margin-bottom: 20px;
+}
+
 .fade-out {
     color: #656970;
+}
+
+.gallery {
+    text-align: center;
+    line-height: 5;
+}
+
+.image-and-video-styling, iframe {
+	box-shadow: 2px 2px 20px 0 #888;
+    border-radius: 1%;
 }
 
 /* Id's */
@@ -150,6 +166,7 @@ a[href^="http"]:hover{
     position: fixed;
     right: 0px;
     left: 0px;
+    top: 0px;
 
     /* background */
     background: transparent;
@@ -179,18 +196,18 @@ a[href^="http"]:hover{
     float: left;
 }
 
-#title {
+#bar-title {
     /* kinda center the text */
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-#title-text {
+#bar-title-text {
     /* text */
     font-size: 2.5em;
 
     /* add spacing in bettween the log and text */
-    margin-top: 1.3vh;
+    margin-top: 15px;
 }
 
 #bar-elements {
@@ -209,6 +226,9 @@ a[href^="http"]:hover{
     color: white;
     text-align: center;
     font-size: 1.5em;
+    line-height: 1.5;
+
+    line-height: 4;
     
     background-image: url(../images/Banner/Mindstorm%20Banner.JPG);
 
@@ -216,6 +236,8 @@ a[href^="http"]:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+
+    padding-top: 550px;
 
     /* set it's height */
     min-height: 100vh;
@@ -232,7 +254,6 @@ a[href^="http"]:hover{
     margin-top: 7em;
 }
 
-/* formating the about section */
 #formatting-about {
     margin-bottom: 30px;
 }
@@ -268,24 +289,9 @@ a[href^="http"]:hover{
     text-align: center;
 }
 
-#footer {
-    background: #222831;
-    color: #848484;
-
-    width: 100%;
-    
-    padding-left: 5vw;
-    padding-right: 5vw;
-
-    padding-top: 5em;
-    padding-bottom: 2em;
-
-    margin-top: 7em; 
-}
-
 #affiliations-and-contacts {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     grid-column-gap: 3vw;
 
     width: 1170px;
@@ -306,7 +312,6 @@ a[href^="http"]:hover{
 }
 
 #contact-us {
-    padding-top: 7px;
     line-height: 1.5;
 }
 
@@ -324,6 +329,85 @@ a[href^="http"]:hover{
 #send-message {
     background: #fa7e0a;
     color: #fff3e7;
+}
+
+#title {
+    text-align: center;
+
+    margin-top: 8em;
+}
+
+/* Mobile */
+@media screen and (max-width: 800px) {
+    #bar {
+        grid-column-gap: 2vw;
+
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    #logo {
+        width: 53px;
+        height: 53px;
+    }
+
+    #title-text {
+        font-size: 1.3em;
+
+    }
+
+    #bar-elements {
+        visibility: hidden;
+        display: block;
+    }
+
+    #bar-elements:after {
+        visibility: visible;
+
+        content: "test";
+
+    }
+
+    #welcome {
+        font-size: 1.3em;
+    }
+
+    #info {
+        margin-left: 3px;
+        margin-right: 3px;
+
+    }
+
+    #formatting-about {
+        right: 0px;
+        left: 0px;
+
+        width: 437px;
+    }
+
+    #our_robots {
+        text-align: left;
+    }
+
+    #robot_images {
+        display: block;
+
+        text-align: left;
+    }
+
+    #formatting-ftc-sponsors-merch {
+        display: block;
+    }
+
+    #affiliations-and-contacts {
+        display: block;
+    }
+
+    #copyright-and-socials {
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: center;
+    }
 }
 
 /* keyframes */
