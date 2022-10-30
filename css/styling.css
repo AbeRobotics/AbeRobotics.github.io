@@ -10,22 +10,6 @@ body {
     animation: fadeInAnimation ease 1.5s;
 }
 
-input, textarea {
-    color: rgba(255, 255, 255, 0.5);
-
-    background: rgba(0, 0, 0, 0.2);
-    border: none;
-    border-radius: 5%;
-    box-sizing: border-box;
-
-    font-size: 16px;
-    
-    padding: 15px;
-
-    margin-bottom: 15px;
-    resize: none;
-}
-
 footer {
     background: #222831;
     color: #848484;
@@ -109,6 +93,8 @@ a[href^="http"]:hover{
 
     display: none;
     position: absolute;
+
+    margin-left: 57px;
 
     /* Shadow & Color */
     background-color: #ffffff;
@@ -202,7 +188,7 @@ a[href^="http"]:hover{
 
 #bar-title {
     /* kinda center the text */
-    margin-left: 15px;
+    margin-left: 30px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -220,11 +206,11 @@ a[href^="http"]:hover{
     font-size: 1em;
     text-align: center;
 
-    margin-right: 15px;
+    margin-right: 30px;
 
     /* griding */
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
 }
 
 /* This is for the big image and it's text */
@@ -298,16 +284,13 @@ a[href^="http"]:hover{
 
 #affiliations-and-contacts {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-column-gap: 3vw;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 2vw;
 
     width: 1170px;
 
     margin-left: auto;
     margin-right: auto;
-
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 #affiliations-link {
@@ -331,11 +314,6 @@ a[href^="http"]:hover{
     margin-right: auto;
 
     padding-top: 2em;
-}
-
-#send-message {
-    background: #fa7e0a;
-    color: #fff3e7;
 }
 
 #title {
