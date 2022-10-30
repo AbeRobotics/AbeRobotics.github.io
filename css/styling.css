@@ -1,4 +1,3 @@
-/* special thanks to Shayan for giving me a pretzzel */
 /* General */
 * {
     font-family: "Roboto", Arial, serif;
@@ -37,6 +36,11 @@ footer {
     padding-bottom: 2em;
 
     margin-top: 7em; 
+}
+
+img, iframe{
+    box-shadow: 2px 2px 20px 0 #888;
+    border-radius: 1%;
 }
 
 /* remove bold */
@@ -151,11 +155,6 @@ a[href^="http"]:hover{
     line-height: 5;
 }
 
-.image-and-video-styling, iframe {
-	box-shadow: 2px 2px 20px 0 #888;
-    border-radius: 1%;
-}
-
 /* Id's */
 /* Bar elements */
 #bar {
@@ -184,8 +183,8 @@ a[href^="http"]:hover{
     grid-template-columns: auto auto;
     grid-column-gap: 2vw;
 
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 #logo {
@@ -196,8 +195,14 @@ a[href^="http"]:hover{
     float: left;
 }
 
+#logo, img[src^="images/GDMS"], img[src^="../../images/GDMS"] {
+    box-shadow: none;
+    border-radius: 0;
+}
+
 #bar-title {
     /* kinda center the text */
+    margin-left: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -214,6 +219,8 @@ a[href^="http"]:hover{
     /* text */
     font-size: 1em;
     text-align: center;
+
+    margin-right: 15px;
 
     /* griding */
     display: grid;
