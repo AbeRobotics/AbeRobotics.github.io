@@ -94,7 +94,7 @@ a[href^="http"]:hover{
     display: none;
     position: absolute;
 
-    margin-left: 57px;
+    margin-left: 3vw;
 
     /* Shadow & Color */
     background-color: #ffffff;
@@ -219,7 +219,6 @@ a[href^="http"]:hover{
     color: white;
     text-align: center;
     font-size: 1.5em;
-    line-height: 1.5;
 
     line-height: 4;
     
@@ -230,7 +229,7 @@ a[href^="http"]:hover{
     background-size: cover;
     background-position: center center;
 
-    padding-top: 550px;
+    padding-top: 40vh;
 
     /* set it's height */
     min-height: 100vh;
@@ -325,10 +324,7 @@ a[href^="http"]:hover{
 /* Mobile */
 @media screen and (max-width: 800px) {
     #bar {
-        grid-column-gap: 2vw;
-
-        padding-left: 6vw;
-        padding-right: 6vw;
+        grid-column-gap: 0;
     }
 
     #logo {
@@ -336,21 +332,12 @@ a[href^="http"]:hover{
         height: 53px;
     }
 
-    #title-text {
-        font-size: 1.3em;
-
+    #bar-title-text {
+        font-size: 1.5em;
     }
 
     #bar-elements {
-        visibility: hidden;
-        display: block;
-    }
-
-    #bar-elements:after {
-        visibility: visible;
-
-        content: "test";
-
+        display: none;
     }
 
     #welcome {
