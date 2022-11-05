@@ -1,6 +1,7 @@
 /* General */
 * {
     font-family: "Roboto", Arial, serif;
+    font-weight: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,11 +26,6 @@ footer {
 img, iframe{
     box-shadow: 2px 2px 20px 0 #888;
     border-radius: 1%;
-}
-
-/* remove bold */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
 }
 
 li {
@@ -97,7 +93,7 @@ a[href^="http"]:hover{
     margin-left: 3vw;
 
     /* Shadow & Color */
-    background-color: #ffffff;
+    background: #ffffff;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
     /* Make the shadow work with older browsers */
@@ -126,6 +122,12 @@ a[href^="http"]:hover{
 
 .dropdown-elements:active {
     background: #f6f6f6;
+}
+
+.other-info {
+    flex-basis: calc( calc(800px - 100%) * 999);
+    flex-grow: 1;
+    padding: 1em;
 }
 
 .footer-titles {
@@ -213,6 +215,29 @@ a[href^="http"]:hover{
     grid-template-columns: auto auto auto auto;
 }
 
+#menu-phone {
+    display: none;
+
+    text-align: center;
+    padding-top: 15px;
+}
+
+#menu-button-phone {
+    font-size: 1.5em;
+    cursor: pointer;
+
+    padding: 5px;
+
+    border: none;
+    background: #ffffff;
+    border-radius: 40%;
+    transition: background 0.3s ease;
+}
+
+#menu-button-phone:active {
+    background: #efefef;
+}
+
 /* This is for the big image and it's text */
 #welcome { 
     /* text */
@@ -241,26 +266,19 @@ a[href^="http"]:hover{
 
     width: 1170px;
 
+    margin-top: 7em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 7em;
 }
 
-#formatting-about {
+#about {
     margin-bottom: 30px;
+    padding: 1em;
 }
 
-#formatting-ftc-sponsors-merch {
-    display: grid;
-    grid-template-columns: 33.3% 41.6% 25%;
-}
-
-#formatting-ftc-about {
-    padding-right: 20px;
-}
-
-#formatting-merchandise {
-    padding-left: 20px;
+#ftc-sponsors-merch {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #gdms-canada-logo {
@@ -328,56 +346,64 @@ a[href^="http"]:hover{
     }
 
     #logo {
-        width: 53px;
-        height: 53px;
+        width: 35px;
+        height: 35px;
+    }
+
+    #bar-title {
+        margin-left: 10px;
     }
 
     #bar-title-text {
-        font-size: 1.5em;
+        font-size: 1em;
+
+        margin-top: 10px;
     }
 
     #bar-elements {
         display: none;
     }
 
+    #menu-phone {
+        display: block;
+    }
+
     #welcome {
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     #info {
-        margin-left: 3px;
-        margin-right: 3px;
+        font-size: 1em;
 
+        width: auto;
+    
+        margin-top: 3em;
     }
 
-    #formatting-about {
-        right: 0px;
-        left: 0px;
+    #about {
+        padding: 15px;
+    }
 
-        width: 437px;
+    #ftc-sponsors-merch {
+        display: block;
+        flex-wrap: none;
+    }
+
+    #gdms-canada-logo {
+        text-align: left;
     }
 
     #our_robots {
         text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 15px;
+        margin-bottom: 5vh;
     }
 
     #robot_images {
         display: block;
 
-        text-align: left;
-    }
-
-    #formatting-ftc-sponsors-merch {
-        display: block;
-    }
-
-    #affiliations-and-contacts {
-        display: block;
-    }
-
-    #copyright-and-socials {
-        margin-left: 0px;
-        margin-right: 0px;
         text-align: center;
     }
 }

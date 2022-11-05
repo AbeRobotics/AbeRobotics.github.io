@@ -2,16 +2,16 @@
 
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link rel="stylesheet" type="text/css" href="css/styling.css">
-		<title>Aberhart Robotics Republic</title>
-		<link rel="icon" href="images/Logo/ARR-Logo.png">
-
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Official Website for the William Aberhart Robotics Teams"/>
-		<meta name="keywords" content="Abe Robotics Republic, ARR, Aberhart, Aberhart Robotics, Abe Robotics, FTC, First Robotics"/>
+		<meta name="keywords" content="Abe Robotics Republic, ARR, Aberhart, Aberhart Robotics, Abe Robotics, FTC, First Robotics, Abe"/>
 		<meta name="author" content="Maggie Brewster, Seth Heizer, Finn Vamosi, Cole Klapper, Jazeb Zafar"/>
 
+		<link rel="stylesheet" type="text/css" href="css/styling.css">
+		<link rel="icon" href="images/Logo/ARR-Logo.png">
+
+		<title>Aberhart Robotics Republic</title>
 	</head>
 	<body>
 		<div id="bar">
@@ -25,7 +25,7 @@
 			</div>
 				
 			<!-- Bar links-->
-			<nav id="bar-elements">
+			<div id="bar-elements">
 				<a class="bar-links" href="index.html">Home</a>
 
 				<div class="bar-links">
@@ -50,7 +50,11 @@
 
 				<a class="bar-links" href="pages/Sponsors/sponsor.html">Sponsors</a>
 				<a class="bar-links" href="pages/Archive/archive.html">Archive</a>
-			</nav>
+			</div>
+
+			<div id="menu-phone">
+				<button id="menu-button-phone">&#9776;</button>
+			</div>
 		</div>
 
 		<!-- background image-->
@@ -60,7 +64,7 @@
 		</div>
 
 		<div id="info">			
-			<div id="formatting-about">						
+			<div id="about">						
 				<h2>Who are we?</h2>						
 				<p>
 					The Aberhart Robotics Republic (ARR) is 
@@ -72,8 +76,8 @@
 					We are also proud recipients of the FTC 2019-20 "Skystone" Collins Aerospace Innovate Award.
 				</p>
 			</div>
-			<div id="formatting-ftc-sponsors-merch">
-				<div id="formatting-ftc-about">
+			<div id="ftc-sponsors-merch">
+				<div class="other-info">
 					<h2>What is FTC? </h2>
 					<p>
 						FTC stands for <a href="https://www.firstinspires.org/robotics/ftc" target="_blank">FIRST Tech Challenge</a>. 
@@ -81,7 +85,7 @@
 						a robot designed for the year's challenge.
 					</p>
 				</div>
-				<div>
+				<div class="other-info">
 					<h2>Sponsor</h2>
 					<p style="margin-bottom: 27px;">
 						We would like to thank our sponsor, 
@@ -93,7 +97,7 @@
 						<img src="images/GDMS-Canada-Logo.png" width="400px" height="74.5px" alt="GDMS Canada Logo">
 					</a>
 				</div>
-				<div id="formatting-merchandise">
+				<div class="other-info">
 					<h2>Merchandise</h2>
 					<p>
 						We've got merch! If you want to support us, head to our 
