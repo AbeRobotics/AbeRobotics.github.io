@@ -46,35 +46,21 @@ p {
     color: #848484;
 }
 
-/* Make links that go to other parts of the website look normal */
-a[href] {
+a {
+    color: black;
     text-decoration: none;
-    color: #000000;
-}
-
-/* Links that go to other sites */
-a[href^="http"] {
-	color: #fa7e0a;
-    text-decoration: none;	
-}
-
-a[href^="http"]:hover{
-	color: #faa352;
-    text-decoration: underline;
 }
 
 /* Class's */
 .bar-links {
-    /* font */
     font-size: 1.5em;
     display: inline-block;
 
-    /* padding */
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 40px;
     padding-bottom: 40px;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease-in-out;
 }
 
 .bar-links:hover {
@@ -84,7 +70,6 @@ a[href^="http"]:hover{
 
 /* Dropdown menu code */
 .dropdown-content {
-    /* text */
     text-align: left;
 
     display: none;
@@ -92,11 +77,8 @@ a[href^="http"]:hover{
 
     margin-left: 3vw;
 
-    /* Shadow & Color */
     background: #ffffff;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
-    /* Make the shadow work with older browsers */
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     -ms-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -108,7 +90,6 @@ a[href^="http"]:hover{
 }
 
 .dropdown-elements {
-    /* padding for the dropdown menu */
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 8px;
@@ -117,21 +98,53 @@ a[href^="http"]:hover{
 
 .dropdown-elements:hover {
     background: #efefef;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease-in-out;
 }
 
 .dropdown-elements:active {
     background: #f6f6f6;
 }
 
-.other-info {
+.center-content {
+    width: 1170px;
+
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-elements {
     flex-basis: calc( calc(800px - 100%) * 999);
     flex-grow: 1;
     padding: 1em;
 }
 
+.text-links {
+    color: #fa7e0a;
+    text-decoration: none;
+}
+
+.text-links:hover {
+    color: #faa352;
+    text-decoration: underline;
+}
+
 .footer-titles {
     margin-bottom: 20px;
+}
+
+.footer-links {
+    color: #656970;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-links:hover {
+    color: #fa7e0a;
 }
 
 .fade-out {
@@ -146,8 +159,6 @@ a[href^="http"]:hover{
 /* Id's */
 /* Bar elements */
 #bar {
-    /* text */
-    color: black;
     text-align: left;
 
     position: fixed;
@@ -155,18 +166,15 @@ a[href^="http"]:hover{
     left: 0px;
     top: 0px;
 
-    /* background */
     background: transparent;
     background-color: #ffffff;
     box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.22);
 
-    /* Make shadow work for older browsers */
     -webkit-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.22);
     -moz-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.22);
     -ms-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.22);
     -o-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.22);
 
-    /* griding */
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 2vw;
@@ -189,28 +197,22 @@ a[href^="http"]:hover{
 }
 
 #bar-title {
-    /* kinda center the text */
     margin-left: 30px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
 #bar-title-text {
-    /* text */
     font-size: 2.5em;
-
-    /* add spacing in bettween the log and text */
     margin-top: 15px;
 }
 
 #bar-elements {
-    /* text */
     font-size: 1em;
     text-align: center;
 
     margin-right: 30px;
 
-    /* griding */
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
@@ -230,7 +232,7 @@ a[href^="http"]:hover{
 
     border: none;
     background: #ffffff;
-    border-radius: 40%;
+    border-radius: 70%;
     transition: background 0.3s ease;
 }
 
@@ -238,9 +240,7 @@ a[href^="http"]:hover{
     background: #efefef;
 }
 
-/* This is for the big image and it's text */
 #welcome { 
-    /* text */
     color: white;
     text-align: center;
     font-size: 1.5em;
@@ -249,36 +249,25 @@ a[href^="http"]:hover{
     
     background-image: url(../images/Banner/Mindstorm%20Banner.JPG);
 
-    /* bakcground image settings */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 
     padding-top: 40vh;
 
-    /* set it's height */
     min-height: 100vh;
 }
 
-#info {
+#main-content {
     font-size: 1.2em;
     line-height: 1.8;
 
-    width: 1170px;
-
     margin-top: 7em;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #about {
     margin-bottom: 30px;
     padding: 1em;
-}
-
-#ftc-sponsors-merch {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 #gdms-canada-logo {
@@ -299,37 +288,12 @@ a[href^="http"]:hover{
     text-align: center;
 }
 
-#affiliations-and-contacts {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 2vw;
-
-    width: 1170px;
-
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#affiliations-link {
-    color: #27211b;
-}
-
-#affiliations-link:hover {
-    color: #fa7e0a;
-}
-
 #contact-us {
     line-height: 1.5;
 }
 
 #copyright-and-socials {
     text-align: center;
-
-    width: 1170px;
-
-    margin-left: auto;
-    margin-right: auto;
-
     padding-top: 2em;
 }
 
@@ -341,6 +305,11 @@ a[href^="http"]:hover{
 
 /* Mobile */
 @media screen and (max-width: 800px) {
+    .center-content {
+        display: block;
+        width: auto;
+    }
+
     #bar {
         grid-column-gap: 0;
     }
@@ -372,11 +341,8 @@ a[href^="http"]:hover{
         font-size: 1em;
     }
 
-    #info {
-        font-size: 1em;
-
-        width: auto;
-    
+    #main-content {
+        font-size: 1em;    
         margin-top: 3em;
     }
 
@@ -405,6 +371,12 @@ a[href^="http"]:hover{
         display: block;
 
         text-align: center;
+    }
+
+    #affiliations-and-contacts {
+        display: block;
+        width: auto;
+
     }
 }
 
