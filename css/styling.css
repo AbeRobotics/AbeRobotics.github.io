@@ -310,6 +310,19 @@ div[class^="flex"] div {
     margin-top: 8em;
 }
 
+@media screen and (max-width: 1350px) {
+    #bar-title h1 {
+        font-size: 1.6em;
+        margin-top: 20px;
+    }
+
+    #logo {
+        width: 50px;
+        height: 50px;
+        margin-top: 13px;
+    }
+}
+
 @media screen and (max-width: 1074px) {
     .bar-links {
         font-size: 1.2em;
@@ -318,19 +331,27 @@ div[class^="flex"] div {
     #logo {
         width: 40px;
         height: 40px;
-        margin-top: 13px;
     }
 
-    #bar-title-text {
+    #bar-title h1 {
         font-size: 1.5em;
-
-        margin-top: 20px;
     }
 
 }
 
-/* Mobile */
 @media screen and (max-width: 800px) {
+    #bar-title h1 {
+        font-size: 0.9em;
+    }
+
+    #logo {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
     .bar-links {
         font-size: 0.5em;
         text-align: left;
@@ -382,19 +403,16 @@ div[class^="flex"] div {
     }
 
     #bar-title h1 {
-        font-size: 0.9em;
         margin-top: 10px;
     }
 
     #logo {
-        width: 35px;
-        height: 35px;
         margin-top: 0;
     }
 
     #menu-button {
         font-size: 2em;
-        margin-top: 17px;
+        margin-top: 1.7vh;
 
         height: max-content;
     }
@@ -459,6 +477,18 @@ div[class^="flex"] div {
         display: block;
         width: auto;
 
+    }
+}
+
+@media screen and (max-width: 361px) {
+    #bar-title h1 {
+        font-size: 0.7em;
+        margin-top: 10px;
+    }
+
+    #logo {
+        width: 32px;
+        height: 32px;
     }
 }
 
