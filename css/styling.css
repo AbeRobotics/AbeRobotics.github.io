@@ -373,7 +373,7 @@ div[class^="flex"] div {
 
     #bar {
         height: 65px;
-        grid-template-columns: auto 40vw;
+        grid-template-columns: auto 35vw;
         margin: 0;
     }
 
@@ -382,7 +382,7 @@ div[class^="flex"] div {
     }
 
     #bar-title h1 {
-        font-size: 1em;
+        font-size: 0.9em;
         margin-top: 10px;
     }
 
