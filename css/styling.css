@@ -382,14 +382,14 @@ a {
         -o-box-shadow: none;
     }
 
-    div[class^="dropdown-content"] > ul > li {
+    .dropdown-content > ul > li {
         padding: 10px;
         padding-left: 10px;
         margin-top: 15px;
         transition: background 0.2s ease-in-out;
     }
 
-    div[class^="dropdown-content"] > ul > li:hover, div[class^="dropdown-content"] > ul > li:active {
+    .dropdown-content > ul > li:hover, .dropdown-content > ul > li:active {
         background: #faf6f1;
     }
 
