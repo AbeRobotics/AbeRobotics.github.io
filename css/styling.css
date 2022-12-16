@@ -59,16 +59,6 @@ button {
     border: none;
 }
 
-div[id^="main-content"] p > a {
-    color: #fa7e0a;
-    text-decoration: none;
-}
-
-div[id^="main-content"] p > a:hover {
-    color: #faa352;
-    text-decoration: underline;
-}
-
 img, iframe{
     box-shadow: 2px 2px 20px 0 #888;
     border-radius: 1%;
@@ -136,7 +126,7 @@ a {
     display: block;
 }
 
-div[class^="dropdown-content"] > ul > li {
+.dropdown-content > ul > li {
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 8px;
@@ -144,11 +134,11 @@ div[class^="dropdown-content"] > ul > li {
     transition: 0.3s ease-in-out;
 }
 
-div[class^="dropdown-content"] > ul > li:hover {
+.dropdown-content > ul > li:hover {
     background: #efefef;
 }
 
-div[class^="dropdown-content"] > ul > li:active{
+.dropdown-content > ul > li:active{
     background: #fbfbfb;
 }
 
@@ -165,7 +155,7 @@ div[class^="dropdown-content"] > ul > li:active{
     flex-wrap: wrap;
 }
 
-div[class^="flex"] div {
+.flex div {
     flex-basis: calc( calc(800px - 100%) * 999);
     flex-grow: 1;
     padding: 1em;
@@ -181,13 +171,8 @@ div[class^="flex"] div {
     border-color: #faa352;
 }
 
-.fade-out {
+.text-fade {
     color: #656970;
-}
-
-.gallery {
-    text-align: center;
-    line-height: 5;
 }
 
 /* Id's */
@@ -273,6 +258,16 @@ div[class^="flex"] div {
     margin-top: 7em;
 }
 
+#main-content p > a {
+    color: #fa7e0a;
+    text-decoration: none;
+}
+
+#main-content p > a:hover {
+    color: #faa352;
+    text-decoration: underline;
+}
+
 #about {
     margin-bottom: 30px;
     padding: 1em;
@@ -280,6 +275,17 @@ div[class^="flex"] div {
 
 #gdms-canada-logo {
     text-align: center;
+}
+
+#gallery {
+    text-align: center;
+    line-height: 5;
+}
+
+#paragraph {
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 45px;
 }
 
 #our_robots {
@@ -307,7 +313,6 @@ div[class^="flex"] div {
 
 #title {
     text-align: center;
-    margin-top: 8em;
 }
 
 @media screen and (max-width: 1350px) {
@@ -327,14 +332,14 @@ div[class^="flex"] div {
     .bar-links {
         font-size: 1.2em;
     }
-    
-    #logo {
-        width: 40px;
-        height: 40px;
-    }
 
     #bar-title h1 {
         font-size: 1.5em;
+    }
+
+    #logo {
+        width: 40px;
+        height: 40px;
     }
 
 }
