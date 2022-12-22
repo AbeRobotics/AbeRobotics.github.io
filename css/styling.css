@@ -105,43 +105,6 @@ a {
     background: #f6f5f5;
 }
 
-/* Dropdown menu code */
-.dropdown-content {
-    text-align: left;
-
-    display: none;
-    position: absolute;
-
-    margin-top: 40px;
-
-    background: #ffffff;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    -ms-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    -o-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.bar-links:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content > ul > li {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 8px;
-    padding-top: 8px;
-    transition: 0.3s ease-in-out;
-}
-
-.dropdown-content > ul > li:hover {
-    background: #efefef;
-}
-
-.dropdown-content > ul > li:active{
-    background: #fbfbfb;
-}
-
 .center-content {
     width: 60vw;
 
@@ -197,9 +160,6 @@ a {
     display: grid;
     grid-template-columns: auto 40vw;
     grid-column-gap: 2vw;
-
-    padding-left: auto;
-    padding-right: auto;
 }
 
 #bar-title {
@@ -231,6 +191,43 @@ a {
 #logo, img[src^="images/GDMS"], img[src^="../../images/GDMS"] {
     box-shadow: none;
     border-radius: 0;
+}
+
+/* Dropdown menu code */
+#dropdown-content {
+    text-align: left;
+
+    display: none;
+    position: absolute;
+
+    margin-top: 40px;
+
+    background: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    -ms-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    -o-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#dropdown-content > ul > li {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+#dropdown-content > ul > li:hover {
+    background: #efefef;
+}
+
+#dropdown-content > ul > li:active{
+    background: #fbfbfb;
+}
+
+.bar-links:hover #dropdown-content {
+    display: block;
 }
 
 #welcome { 
@@ -273,10 +270,6 @@ a {
     padding: 1em;
 }
 
-#gdms-canada-logo {
-    text-align: center;
-}
-
 #gallery {
     text-align: center;
     line-height: 5;
@@ -309,10 +302,6 @@ a {
 #copyright-and-socials {
     text-align: center;
     padding-top: 2em;
-}
-
-#title {
-    text-align: center;
 }
 
 @media screen and (max-width: 1350px) {
@@ -368,31 +357,6 @@ a {
         display: inherit;
     }
 
-    .dropdown-content {
-        position: static;
-        margin: 0;
-
-        background-color: transparent;
-        font-size: 0.9em;
-
-        box-shadow: none;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        -ms-box-shadow: none;
-        -o-box-shadow: none;
-    }
-
-    .dropdown-content > ul > li {
-        padding: 10px;
-        padding-left: 10px;
-        margin-top: 15px;
-        transition: background 0.2s ease-in-out;
-    }
-
-    .dropdown-content > ul > li:hover, .dropdown-content > ul > li:active {
-        background: #faf6f1;
-    }
-
     .center-content {
         display: block;
         width: auto;
@@ -441,6 +405,35 @@ a {
         -moz-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         -ms-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         -o-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+    #dropdown-content {
+        position: static;
+        margin: 0;
+
+        background-color: transparent;
+        font-size: 0.9em;
+
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        -o-box-shadow: none;
+    }
+
+    #dropdown-content > ul > li {
+        padding: 10px;
+        padding-left: 10px;
+        margin-top: 15px;
+        transition: background 0.2s ease-in-out;
+    }
+
+    #dropdown-content > ul > li:hover, .dropdown-content > ul > li:active {
+        background: #faf6f1;
+    }
+
+    #paragraph {
+        padding-top: 10px;
     }
 
     #welcome {
